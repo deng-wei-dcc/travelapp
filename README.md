@@ -30,5 +30,10 @@ yarn lint
   document.
   body) 调用fastClick.js
 
+ ### 主题颜色封装
+ 1、yarn add stylus stylus-loader --save 
+ 2、创建一个styl的文件通过$符创建一个颜色变量并引入
+ 3、使用 $名称
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

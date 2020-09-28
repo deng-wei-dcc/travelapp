@@ -13,6 +13,17 @@ fastClick.attach(document.body)
 import './assets/css/reset.css'
 import './assets/css/iconfont.css'
 
+//移动端适配
+import 'amfe-flexible'
+
+//引入vant组件
+import { 
+    Swipe, SwipeItem,
+    Image as VanImage,Lazyload
+  } from 'vant';
+Vue.use(Swipe).use(SwipeItem)
+   .use(VanImage).use(Lazyload)
+
 new Vue({
   router,
   store,

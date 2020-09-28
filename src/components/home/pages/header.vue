@@ -20,29 +20,29 @@ export default {
 <style scoped>
     .header{
         display: flex;
-        height: 0.4rem;
-        line-height: 0.4rem;
+        height: 80px;
+        line-height: 80px;
         color: #fff;
-        font-size: 0.16rem;
+        font-size: 32px;
         background-color: #00bcd4;
     }
     .header-left{
-        width: 0.2rem;
-        padding: 0 0.1rem 0 0.1rem;
+        width: 40px;
+        padding: 0 20px 0 20px;
     }
     .header-search{
         flex: 1;
-        height: 0.3rem;
-        line-height: 0.3rem;
-        font-size: 0.14rem;
-        margin: 0.05rem 0;
-        border-radius: 0.05rem;
-        padding-left: 0.1rem;
+        height: 60px;
+        line-height: 60px;
+        font-size: 28px;
+        margin: 10px 0;
+        border-radius: 10px;
+        padding-left: 20px;
         color: #e4e7ea;
         background-color: #fff;
     }
     .header-right{
-        font-size: 0.14rem;
-        padding: 0 0.1rem;
+        font-size: 28px;
+        padding: 0 20px;
     }
 </style>
