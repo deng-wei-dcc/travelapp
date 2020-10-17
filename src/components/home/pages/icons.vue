@@ -1,13 +1,17 @@
 <template>
     <div class="icons">
-        <div class="icons-item" v-for="item in iconsList" :key="item.id">
-            <van-image
-                width="100%"
-                lazy-load
-                :src="item.imgUrl"
-            />
-            <p>{{item.title}}</p>
-        </div>
+        <van-swipe class="my-swipe" indicator-color="white" :loop="false">
+            <van-swipe-item v-for="(items,index) in pages" :key="index">
+                <div class="icons-item" v-for="item in items" :key="item.id">
+                    <van-image
+                        width="100%"
+                        lazy-load
+                        :src="item.imgUrl"
+                    />
+                    <p>{{item.title}}</p>
+                </div>
+            </van-swipe-item>
+        </van-swipe>
     </div>
 </template>
 <script>
@@ -66,6 +70,17 @@ export default {
                     title: '全部玩乐'
                 }
             ]
+        }
+    },
+    computed: {
+        pages(){
+            let pages = []
+            this.iconsList.forEach((item,index) => {
+                let idx = Math.floor(index / 8)
+                if(!pages[idx]) pages[idx] = [] 
+                pages[idx].push(item)
+            });
+            return pages
         }
     },
 }
