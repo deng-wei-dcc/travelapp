@@ -89,6 +89,7 @@ export default {
     .icons{
         overflow: hidden;/*解决子元素浮动导致高度塌陷 */
         width: 100%;
+        background-color: #fff;
     }
     .icons-item{
         float: left;/*导致高度塌陷 */
