@@ -6,6 +6,7 @@
         <Location />
         <Activity />
         <Hot />
+        <Like />
     </div>
 </template>
 <script>
@@ -15,6 +16,7 @@ import Icons from '@/components/home/pages/icons.vue'
 import Location from '@/components/home/pages/location.vue'
 import Activity from '@/components/home/pages/activity.vue'
 import Hot from '@/components/home/pages/hot.vue'
+import Like from '@/components/home/pages/like.vue'
 export default {
     components: {
         Header,
@@ -22,7 +24,8 @@ export default {
         Icons,
         Location,
         Activity,
-        Hot
+        Hot,
+        Like
     }
 }
 </script>
