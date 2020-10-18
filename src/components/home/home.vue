@@ -5,6 +5,7 @@
         <Icons />
         <Location />
         <Activity />
+        <Hot />
     </div>
 </template>
 <script>
@@ -13,13 +14,15 @@ import Swiper from '@/components/home/pages/swiper.vue'
 import Icons from '@/components/home/pages/icons.vue'
 import Location from '@/components/home/pages/location.vue'
 import Activity from '@/components/home/pages/activity.vue'
+import Hot from '@/components/home/pages/hot.vue'
 export default {
     components: {
         Header,
         Swiper,
         Icons,
         Location,
-        Activity
+        Activity,
+        Hot
     }
 }
 </script>
