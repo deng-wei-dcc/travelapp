@@ -7,6 +7,7 @@
         <Activity />
         <Hot />
         <Like />
+        <Vacation />
     </div>
 </template>
 <script>
@@ -17,6 +18,7 @@ import Location from '@/components/home/pages/location.vue'
 import Activity from '@/components/home/pages/activity.vue'
 import Hot from '@/components/home/pages/hot.vue'
 import Like from '@/components/home/pages/like.vue'
+import Vacation from '@/components/home/pages/vacation.vue'
 export default {
     components: {
         Header,
@@ -25,7 +27,8 @@ export default {
         Location,
         Activity,
         Hot,
-        Like
+        Like,
+        Vacation
     }
 }
 </script>
